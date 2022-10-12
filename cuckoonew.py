@@ -2,6 +2,7 @@ from problem import inputMatrix
 from random import uniform
 from random import randint 
 import math
+import numpy as np
 
 
 distanceMatrix = inputMatrix
@@ -68,7 +69,7 @@ n = len(inputMatrix)
 
 nests = []
 
-initPath=range(0,n)
+initPath= np.arange(0,n)
 index = 0
 for i in range(numNests):
 	if index == n-1:
@@ -95,6 +96,6 @@ for t in range(maxGen):
 		nests[i] = twoOptMove(nests[i],randint(0,n-1),randint(0,n-1))
 	nests.sort(key=lambda tup: tup[1])
 
-print "CUCKOO's SOLUTION"	
+print("CUCKOO's SOLUTION")
 print(nests[0])
 

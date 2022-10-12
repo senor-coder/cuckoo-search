@@ -10,8 +10,8 @@ def calculateDistance(path,distanceMatrix):
 
 def swap(sequence,i,j):
 	temp = sequence[i]
-        sequence[i]=sequence[i+1]
-        sequence[i+1]=temp
+	sequence[i]=sequence[i+1]
+	sequence[i+1]=temp
 
 improvements = True
 distanceMatrix = inputMatrix
@@ -31,8 +31,8 @@ while(improvements):
 		else:
 			swap(path,i,i+1)
 
-print "HILL CLIMBING"
-print "PATH :"
-print bestPath
-print "DISTANCE :"
-print distance
+print("HILL CLIMBING")
+print("PATH :")
+print(bestPath)
+print("DISTANCE :")
+print (distance)
